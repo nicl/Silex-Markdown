@@ -1,5 +1,5 @@
 {
-    "name": "room271/silex-markdown",
+    "name": "nicl/silex-markdown",
     "description": "Simple Silex wrapper for the Dragonfly markdown library",
     "keywords": ["markdown"],
     "homepage": "http://github.com/nicl/silex-markdown",
