@@ -6,7 +6,7 @@ use Silex\Application;
 use Silex\Provider\TwigServiceProvider;
 use Nicl\Silex\MarkdownServiceProvider;
 
-class SilexMarkdownTest extends \PHPUnit_Framework_Testcase
+class MarkdownServiceProviderTest extends \PHPUnit_Framework_Testcase
 {
     public function setUp()
     {
@@ -27,7 +27,7 @@ class SilexMarkdownTest extends \PHPUnit_Framework_Testcase
 
         // tokenise, parse, compile
         $raw = "{{ '#Hello World'|markdown }}";
-        $stream = $twig->tokenise($raw);
+        $stream = $twig->tokenize($raw);
         $ast = $twig->parse($stream);
         $output = $twig->compile($ast);
 
