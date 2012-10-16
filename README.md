@@ -12,7 +12,7 @@ the following to your `composer.json` file:
     {
         "minimum-stability": "dev",
         "require": {
-            "room271/silex-markdown": "1.0.*"
+            "nicl/silex-markdown": "1.0.*"
         }
     }
 
