@@ -1,9 +1,13 @@
 Silex-Markdown
 ==============
 
-A lightweight markdown service provider for Silex. Recommended installation is
-[through composer](http://getcomposer.org). Just add the following to your
-`composer.json` file:
+A lightweight markdown service provider for Silex.
+
+Installation
+------------
+
+Recommended installation is [through composer](http://getcomposer.org). Just add
+the following to your `composer.json` file:
 
     {
         "minimum-stability": "dev",
