@@ -1,0 +1,25 @@
+{
+    "name": "room271/silex-markdown",
+    "description": "Simple Silex wrapper for the Dragonfly markdown library",
+    "keywords": ["markdown"],
+    "homepage": "http://github.com/nicl/silex-markdown",
+    "authors": [
+        {
+            "name": "Nicolas Long",
+            "email": "nicolaslong@gmail.com"
+        }
+    ],
+    "require": {
+        "silex/silex": "1.0.*",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "dflydev/markdown": "1.0.2"
+    },
+    "autoload": {
+        "psr-0": { "SilexMarkdown": "src/" }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0"
+        }
+    }
+}
