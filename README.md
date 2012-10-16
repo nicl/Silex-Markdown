@@ -1,7 +1,8 @@
 Silex-Markdown
 ==============
 
-A lightweight markdown service provider for Silex.
+A lightweight markdown service provider for Silex. Uses the
+[Dragonfly](https://github.com/dflydev/dflydev-markdown) markdown parser.
 
 Installation
 ------------
