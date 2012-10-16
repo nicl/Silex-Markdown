@@ -15,7 +15,7 @@
         "dflydev/markdown": "1.0.2"
     },
     "autoload": {
-        "psr-0": { "SilexMarkdown": "src/" }
+        "psr-0": { "Nicl\\Silex": "src/" }
     },
     "extra": {
         "branch-alias": {
