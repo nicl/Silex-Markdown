@@ -7,8 +7,14 @@ use Silex\Provider\TwigServiceProvider;
 use Twig_Loader_String;
 use Nicl\Silex\MarkdownServiceProvider;
 
+/**
+ * Tests for markdown service provider
+ */
 class MarkdownServiceProviderTest extends \PHPUnit_Framework_Testcase
 {
+    /**
+     * {@inheritdoc}
+     */
     public function setUp()
     {
         $this->app = new Application();
@@ -16,6 +22,9 @@ class MarkdownServiceProviderTest extends \PHPUnit_Framework_Testcase
         $this->app->register(new MarkdownServiceProvider());
     }
 
+    /**
+     * Basic test case of service provider
+     */
     public function testMarkdownTwigFilter()
     {
         $twig = $this->app['twig'];
