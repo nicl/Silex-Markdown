@@ -3,6 +3,7 @@
     "description": "Simple Silex wrapper for the Dragonfly markdown library",
     "keywords": ["markdown"],
     "homepage": "http://github.com/nicl/silex-markdown",
+    "license": "MIT",
     "authors": [
         {
             "name": "Nicolas Long",
