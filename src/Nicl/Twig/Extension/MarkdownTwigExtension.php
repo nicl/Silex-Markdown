@@ -2,7 +2,7 @@
 
 namespace Nicl\Twig\Extension;
 
-use dflydev\markdown\MarkdownParser;
+use dflydev\markdown\IMarkdownParser;
 
 /**
  * Twig Markdown extension
@@ -14,11 +14,11 @@ class MarkdownTwigExtension extends \Twig_Extension
     /**
      * Public constructor
      *
-     * @param MarkdownParser $parser
+     * @param IMarkdownParser $parser
      *
      * @return MarkdownTwigExtension
      */
-    function __construct(MarkdownParser $parser)
+    public function __construct(IMarkdownParser $parser)
     {
         $this->parser = $parser;
     }
