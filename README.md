@@ -36,6 +36,32 @@ instantiate it and call the `transformMarkdown` method as follows:
     $parser = new MarkdownParser();
     $parser->transformMarkdown($txt);
 
+Configuration
+-------------
+
+### Parameters
+
+ * **markdown.factory**: Name of the service that will create
+   `dflydev\markdown\IMarkdownParser` instances, string.
+ * **markdown.parser**: Name of the built-in parser to use, string.
+   *Default: markdown*
+
+   Available options:
+   * **markdown**:
+     Standard Markdown parser
+   * **extra**:
+     Markdown Extra parser
+
+### Services
+
+ * **markdown**:
+   Markdown parser, instance of `dflydev\markdown\IMarkdownParser`.
+
+   If **markdown.factory** is defined, that service will be used to
+   create the `IMarkdownParser` instance. Otherwise, **markdown.parser**
+   will be examined and an instance of the appropriate class will be
+   instantiated.
+
 Tests
 -----
 
@@ -43,7 +69,7 @@ If you wish to run the tests you need to have
 [PHPUnit](https://github.com/sebastianbergmann/phpunit/) installed. Then, from
 the silex-markdown root directory run:
 
-    phpunit --bootstrap tests/bootstrap.php tests/Nicl/Silex/Tests/MarkdownProviderTest.php
+    phpunit
 
 (You may need to adapt the phpunit command and paths depending on your
 configuration.)
