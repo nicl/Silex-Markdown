@@ -24,11 +24,6 @@ To use the service provider first register it:
 
     $app->register(new MarkdownServiceProvider());
 
-Make sure to register this provider **after** having registered the Twig
-provider. Otherwise, you'll see the following error:
-
-    InvalidArgumentException: Identifier "twig" is not defined.
-
 You can then use the markdown filter in Twig files. For example:
 
     {{ '#Hello World'|markdown }}
