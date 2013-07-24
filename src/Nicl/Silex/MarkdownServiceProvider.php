@@ -37,11 +37,6 @@ class MarkdownServiceProvider implements ServiceProviderInterface
             }
         });
 
-        $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
-            $twig->addExtension(new MarkdownTwigExtension($app['markdown']));
-
-            return $twig;
-        }));
     }
 
     /**
@@ -49,5 +44,10 @@ class MarkdownServiceProvider implements ServiceProviderInterface
      */
     public function boot(Application $app)
     {
+        $app['twig'] = $app->share($app->extend('twig', function($twig, $app) {
+            $twig->addExtension(new MarkdownTwigExtension($app['markdown']));
+
+            return $twig;
+        }));
     }
 }
